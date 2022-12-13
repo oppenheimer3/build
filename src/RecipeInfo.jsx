@@ -10,7 +10,7 @@ const RecipeInfo = () => {
     },[id])
 
     let getRecipe= async(id)=>{
-        let response= await fetch(`/api/recipe/${id}`)
+        let response= await fetch(`http://openheimer.pythonanywhere.com/api/recipe/${id}`)
         let data= await response.json()
         setRecipe(data)
     }

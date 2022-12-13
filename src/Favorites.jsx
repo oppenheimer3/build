@@ -6,7 +6,7 @@ const Favorites = ({liked,likedRecipes}) => {
 
 
     let getLiked = async () =>{
-        let response= await fetch('/api/favorites/',{
+        let response= await fetch('http://openheimer.pythonanywhere.com/api/favorites/',{
             method: "POST",
             headers:{
                 'Content-Type': 'application/json'

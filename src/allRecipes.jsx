@@ -15,7 +15,7 @@ export default function AllRecipes({search,likedRecipes,liked}) {
     }
 
     let getRecipes = async (searchTerm) =>{
-      let response= await fetch(`/api/${searchTerm}`)
+      let response= await fetch(`http://openheimer.pythonanywhere.com/api/${searchTerm}`)
       let data= await response.json()
       setRecipes(data)
     }

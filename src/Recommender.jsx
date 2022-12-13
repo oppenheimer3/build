@@ -7,7 +7,7 @@ const Recommender = ({liked,likedRecipes}) => {
 
 
     let getRecommended = async () =>{
-        let response= await fetch('/api/recommended/',{
+        let response= await fetch('http://openheimer.pythonanywhere.com/api/recommended/',{
             method: "POST",
             headers:{
                 'Content-Type': 'application/json'
